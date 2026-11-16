@@ -1,4 +1,3 @@
-
 from django.contrib import admin
 from .models import Receta
 
@@ -10,8 +9,7 @@ class RecetaAdmin(admin.ModelAdmin):
         'id',
         'nombre',
         'tiempo_preparacion',
-        'dificultad',
-        'fecha_creacion'
+        'dificultad'
     )
 
     search_fields = ('nombre',)
