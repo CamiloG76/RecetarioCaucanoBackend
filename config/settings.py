@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'corsheaders',
     # Aplicaciones del proyecto
     'recetas',
+    'ingredientes',
 ]
 
 MIDDLEWARE = [
