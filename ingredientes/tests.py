@@ -10,10 +10,8 @@ class IngredienteTest(TestCase):
         self.receta = Receta.objects.create(
             nombre='Empanadas de pipian',
             descripcion='Receta tradicional caucana',
-            region='Cauca',
             tiempo_preparacion=60,
-            dificultad='Media',
-            preparacion='Preparar el pipian y rellenar las empanadas'
+            dificultad='Media'
         )
 
     def test_crear_ingrediente(self):
@@ -25,3 +23,4 @@ class IngredienteTest(TestCase):
 
         self.assertEqual(ingrediente.nombre, 'Papa')
         self.assertEqual(ingrediente.receta, self.receta)
+
